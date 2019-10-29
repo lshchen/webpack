@@ -124,5 +124,11 @@ module.exports =  {
     //   // 别名
     //   // 'bootstrap': 'bootstrap/dist/css/bootstrap.css'
     // }
+  },
+  resolveLoader: { // 解析loader路径
+    modules: ['node_modules',  path.resolve(__dirname, 'loader', 'loader1.js')],
+    alias: { //别名
+      loader1: path.resolve(__dirname, 'loader', 'loader1.js')
+    }
   }
 }
